@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Scholar section */
+.scholarship_section {
+  width: 100%;
+  background-color: #f8f9fe;
+  color: white;
+}
+
+.scholarship_section>.container {
+  max-width: 1180px;
+  min-height: 250px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.scholar_box {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.scholar_item1 {
+  background-color: #f1c317;
+  flex-grow: 1;
+}
+
+.scholar_item2 {
+  background-color: #355ed8;
+  flex-grow: 1;
+}
+
+.scholar_item3 {
+  background-color: #00c4dc;
+  flex-grow: 1;
+}
+
+.icon_container {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 35px;
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_container img {
+  border-radius: 50px;
+}
+
+.scholar_content h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.scholar_content p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Program section */
+.program_section>.container {
+  max-width: 1180px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program_section>.container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  color: #1f3b63;
+  font-weight: 800;
+  margin-top: -20px;
+}
+
+.program_section .categories {
+  display: flex;
+  margin-top: 30px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.categories h4 {
+  padding: 6px 20px;
+  background-color: #f8f9fe;
+  font-weight: 300;
+  font-size: 13px;
+  color: #1f3b63;
+}
+
+.categories #program_selected {
+  background-color: #00d6e7;
+  color: white;
+  border-radius: 3px;
+}
+
+.program_section h6 {
+  color: #252237;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.program_section h3 {
+  color: #252237;
+  font-size: 19px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  margin-top: 18px;
+}
+
+.program_section p {
+  color: #7169a3;
+  font-size: 14px;
+  margin-top: 18px;
+  line-height: 24px;
+}
+
+.my_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 60px;
+}
+
+.grid_box {
+  background-color: #f8f9fe;
+}
+
+.program_img_container {
+  width: 100%;
+}
+
+.program_img_container img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.program_content {
+  padding: 30px;
+}
+
+.program_content button {
+  height: 40px;
+  padding: 10px 40px;
+  border: 1px solid #00d6e7;
+  background-color: rgba(255, 255, 255, 0);
+  color: #00d6e7;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.program_content button:hover {
+  background-color: #00d6e7;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .my_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .my_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .program_section>.container h2 {
+    font-size: 40px;
+  }
+}
